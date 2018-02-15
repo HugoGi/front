@@ -1,11 +1,10 @@
-
-var ctx = document.getElementById("myChart").getContext('2d');
+var ctx = document.getElementById("Chart-min").getContext('2d');
 var myChart = new Chart(ctx, {
-    type: 'bar',
+    type: 'line',
     data: {
-        labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+        labels: ["0", "1", "2", "3", "3", "4", "5"],
         datasets: [{
-            label: '# of Votes',
+            label: 'Grafic Minimale value',
             data: [12, 19, 3, 5, 2, 3],
             backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',
@@ -23,7 +22,7 @@ var myChart = new Chart(ctx, {
                 'rgba(153, 102, 255, 1)',
                 'rgba(255, 159, 64, 1)'
             ],
-            borderWidth: 1
+            borderWidth: 2
         }]
     },
     options: {

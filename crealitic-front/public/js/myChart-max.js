@@ -1,4 +1,5 @@
-var ctx = document.getElementById("myChart").getContext('2d');
+$(document).ready(function () {
+var ctx = document.getElementById("Chart-max").getContext('2d');
 var myChart = new Chart(ctx, {
     type: 'bar',
     data: {
@@ -34,4 +35,5 @@ var myChart = new Chart(ctx, {
             }]
         }
     }
+});
 });

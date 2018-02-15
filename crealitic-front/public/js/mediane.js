@@ -1,5 +1,6 @@
-
-var ctx = document.getElementById("myChart").getContext('2d');
+$(document).ready(function () {
+console.log("ziziziiz")
+var ctx = document.getElementById("Chart-mediane").getContext('2d');
 var myChart = new Chart(ctx, {
     type: 'bar',
     data: {
@@ -35,4 +36,5 @@ var myChart = new Chart(ctx, {
             }]
         }
     }
+});
 });
