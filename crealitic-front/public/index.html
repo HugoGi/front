@@ -16,15 +16,15 @@
   <header>
   <nav class="navbar" style="border-style:solid; border-with:1px; border-color:black;">
   <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">Donatello Project</a>
-      <img src="/img/donatello.png" class="img-rounded" alt="tortue" style="width:80px; height:80px;">
+    <div  class="navbar-header">
+      <a class="navbar-brand" style="margin-left:60px; font-size:30px; margin-top:10px; margin-right:60px;" href="#">Donatello Project</a>
+      <img style="width:80px; height:80px; margin-left:60px; font-size:60px; margin-top:10px;" src="/img/donatello.png" class="img-rounded" alt="tortue">
     </div>
-    <ul class="nav navbar-nav">
-      <li class="active"><a href="#">Home</a></li>
-      <li><a href="#">Create Cluster</a></li>
-      <li><a href="#">Visualitiation data</a></li>
-      <li><a href="#">modifate parameter</a></li>
+    <ul class="nav navbar-nav navbar-center">
+      <li style="margin-left:60px; font-size:30px; margin-top:10px; margin-right:60px;"><a href="#">Home</a></li>
+      <li style="margin-left:60px; font-size:30px; margin-top:10px; margin-right:60px;"><a href="#">Create Cluster</a></li>
+      <li style="margin-left:60px; font-size:30px; margin-top:10px; margin-right:60px;"><a href="#">Visualitiation data</a></li>
+      <li style="margin-left:60px; font-size:30px; margin-top:10px; margin-right:60px;"><a href="#">modifate parameter</a></li>
     </ul>
   </div>
 </nav>
@@ -34,19 +34,18 @@
     <div class="visualisation">
       <div class="row">
         <div class="col-md-12">
+          <div class="col-md-1">
+            <button type="button" class="btn btn-success">Start Process</button>
+          </div>
           <div class="col-md-10">
             <h2><b><center>Data Visualisation</center></b></h2>
           </div>
-          <div class="col-md-2">
-            <div class="dropdown" style="margin-top:40px;">
-              <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Change data<span class="caret"></span></button>
-              <ul class="dropdown-menu">
-                <li><a href="#">Normal</a></li>
-                <li class="disabled"><a href="#">Disabled</a></li>
-                <li class="active"><a href="#">Active</a></li>
-                <li><a href="#">Normal</a></li>
-              </ul>
-            </div>
+          <div class="col-md-1">
+            <select id="time" onclick="changeTime()">
+              <option value="seconde" selected="selected">Seconde</option>
+              <option value="min">Minute</option>
+              <option value="hour">Hour</option>
+            </select>
           </div>
     </div>
       </div>

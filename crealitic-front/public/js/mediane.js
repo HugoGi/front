@@ -1,5 +1,5 @@
+
 $(document).ready(function () {
-console.log("ziziziiz")
 var ctx = document.getElementById("Chart-mediane").getContext('2d');
 var myChart = new Chart(ctx, {
     type: 'bar',
